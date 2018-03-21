@@ -7,8 +7,10 @@ describe('Feature Test:', function() {
     airport = new Airport();
   });
 
-  it('planes can be instructed to land at an airport', function() {
+  it('Adds plane to hanger array - assuming good weather', function() {
+    airport.clearForLanding(plane);
     plane.land(airport)
+    
     expect(airport._hangar).toContain(plane);
   });
 });

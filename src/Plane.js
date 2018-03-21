@@ -1,5 +1,6 @@
 function Plane(status = 'flying') {
   this._status = status;
+  this._approved = false;
 };
 
 Plane.prototype.land = function(airport) {
